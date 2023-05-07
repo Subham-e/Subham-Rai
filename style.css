@@ -176,6 +176,30 @@ hr{
     h1{
         font-size: 60px;
     }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    h5{
+        font-size: 16px;;
+    }
+    p{
+        font-size: 15px;;
+    }
+
+    .my-img{
+        height:380px;
+        width:280px;
+    }
+
+    .wire-img{
+        height:200px !important;
+        width:150px !important;
+        object-fit: fill;
+
+    }
 .about-me{
     flex-direction: column;
 }
@@ -186,6 +210,8 @@ hr{
 }
 .featured{
     flex-direction: column;
+    gap:5%;
+    padding:10% 15%;
 }
 .website-img{
 height:140px;
