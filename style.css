@@ -5,40 +5,31 @@
 }
 body{
     color:#fff;
-    font-size: 18px;
-}
-.main{
-    height: 100vh;
-    background: url(images/main-background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left:15%;
-}
-h1{
-    font-family: 'DM Serif Display', serif;
-    font-size: 90px;
-    margin-bottom: 5px;
-    letter-spacing: 3px;
+    font-size: 13px;
 }
 p{
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 15px;
-    letter-spacing: 5px;
-
-
+    line-height: 1.5;
 }
-button{
+h1,h2,h3,h4,h5,h6{
+    font-family: 'DM Serif Display', serif;
+}
+img{
+    object-fit: fill;
+    box-shadow: -8px 6px 24px -4px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    transition: ease 0.9s;
+}
+img:hover{
+    transform:scale(1.1);
+  }
+  button{
     background: none;
     border:1px solid #fff;
     color:#fff;
     padding:10px 20px;
-    letter-spacing: 3px;
-    transition: ease 0.5s;
+    letter-spacing: 2px;
+    transition: ease 0.9s;
 
 }
 button:hover{
@@ -46,54 +37,66 @@ button:hover{
     color:#000;
     border:1px solid #000
 }
+
+
+/* --------------main page------- */
+.main{
+    height: 80vh;
+    background: url(images/main-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10%;
+}
+h1{
+    font-size: 35px;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+}
+.title{
+    font-size: 16px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+
+}
+/* -------------about me------------- */
 .about-me{
     display: flex;
-    padding:100px 15%;
+    flex-direction: column;
+    padding:10% 15%;
     justify-content: space-between;
-    gap:100px;
+    gap:30px;
     position: relative;
+    align-items: center;
+    color:#000;
 }
-img{
-    height:420px;
-    width:320px;
-    object-fit: cover;
-    box-shadow: -8px 6px 24px -4px rgba(0,0,0,0.75);
-    border-radius: 10px;
-    transition: ease 0.9s;
-}
-img:hover{
-  transform:scale(1.1);
+.my-img{
+    height:300px;
+    width:230px;
+    object-fit: cover !important;
 }
 .text{
-    text-align:left;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 h2{
-    font-size: 40px;
-    color:#000;
+    font-size: 30px;
     margin-bottom: 15px;
-    font-family: 'DM Serif Display', serif;
-    letter-spacing: 3px;
-
-
 }
-.about-me p{
-    color:#000;
-    letter-spacing: 0px;
-    font-size: 16px;
+.text p{
+    text-align: center;
     max-width: 500px;
 }
-.wire-img{
-    height: 250px !important;
-    width:200px !important;
-    position: absolute;
-    bottom:50px;
-    right:0;
-    box-shadow: none;
-}
 
+
+ 
+/* -----------------------Skill section----------------------------------- */
 .skills{
     background-image: url(images/pencil-background.jpg);
     background-position: center;
@@ -102,77 +105,103 @@ h2{
     height:100vh;
     display: flex;
     flex-direction: column;
-    padding-left:50%;
-    justify-content: center;
-    gap:50px;
+    justify-content:center;
+    align-items: center;
+    padding:10% 15%;
+}
+.education, .skill{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.education{
+    margin-bottom: 20px;
 }
 h3{
-    font-size: 35px;
-    margin-bottom: 15px;
-    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    font-size: 25px;
     letter-spacing: 3px;
-
+    padding-bottom: 20px;
 }
-h5{
-    font-size: 18px;
-    margin-bottom: 15px;
+span{
     font-family: 'Poppins', sans-serif;
-    
+    font-weight: bold;
+    font-size: 13px;
+    color:#fff;
+    padding-bottom: 10px;
 
 }
-.sub-text{
-    letter-spacing: 0px;
-    font-size: 16px;
+.sub-text-one{
+    margin-bottom: 20px;
+}
+.sub-text-one, .sub-text-second, .sub-text{
+    font-size: 13px;
+    text-align: center;
     color:#DFDFDE;
     max-width: 500px;
-
+    min-width: 280px;
 }
+/* ----------------------featured section--------------- */
 .featured{
     color:#000;
     display: flex;
-    height: 100vh;
-    gap: 10%;
+    flex-direction: column;
+    gap: 50px;
     align-items: center;
-    padding: 5% 15%;
+    padding: 10% 15%;
 }
 .featured p{
-   letter-spacing: 0;
-   font-size: 16px; 
+   text-align: center;
 }
-.featured-images{
+h4{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.featured-images, .featured-images div{
     display: flex;
     flex-direction: column;
-    gap:10px;
+    justify-content: center;
+    align-items: center;
+} 
+h5{
+    font-size: 15px;
+    margin-bottom: 5px;
 }
 .featured-images h5, .featured-images p{
-    margin:0;
+    text-align: center;
 }
 .website-img{
-    height:200px;
-    width:430px;
-    object-fit: cover;
-    margin-bottom: 10px;;
+    height:150px;
+    width:250px;
+    object-fit: fill;
+    margin-bottom: 10px;
 }
 hr{
     margin:20px auto;
     width:80%;
 }
+/* ----------------contact me -------------- */
 .contact-me{
     padding:50px 15%;
     background-image: url(images/main-background.jpg);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.contact-me h2{
-    color:#fff;
+.contact-me h6{
+   font-size: 16px;
+   text-align: center;
+   margin-bottom: 10px;
 }
 .contact-me p{
-    font-size: 16px;
-    letter-spacing: 0;
+    text-align: center;
+   margin-bottom: 20px;
+
 }
-@media (max-width:1000px){
+/* @media (max-width:1000px){
     h1{
         font-size: 60px;
     }
@@ -186,12 +215,14 @@ hr{
         font-size: 16px;;
     }
     p{
-        font-size: 15px;;
+        font-size: 13px !important;
+        line-height: 1.5 !important ;
+        word-spacing: 1.5px !important;
     }
 
     .my-img{
-        height:380px;
-        width:280px;
+        height:250px;
+        width:200px;
     }
 
     .wire-img{
@@ -203,11 +234,17 @@ hr{
 .about-me{
     flex-direction: column;
 }
+
 .skills{
     flex-direction: row;
     flex-wrap: wrap;
-    padding:15%;
+    padding:10% 15%;
+    background-size:cover;
 }
+.education, .skill{
+    padding-left: 30%;
+}
+
 .featured{
     flex-direction: column;
     gap:5%;
@@ -222,4 +259,4 @@ object-fit: fill;
     flex-direction: column;
     align-items: flex-start;
 }
-}
+} */
