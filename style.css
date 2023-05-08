@@ -199,64 +199,94 @@ hr{
 .contact-me p{
     text-align: center;
    margin-bottom: 20px;
-
 }
-/* @media (max-width:1000px){
-    h1{
-        font-size: 60px;
-    }
-    h2{
-        font-size: 30px;
-    }
-    h3{
-        font-size: 25px;
-    }
-    h5{
-        font-size: 16px;;
-    }
+
+@media (min-width:750px){
     p{
-        font-size: 13px !important;
-        line-height: 1.5 !important ;
-        word-spacing: 1.5px !important;
+        font-size: 15px !important;
     }
-
-    .my-img{
-        height:250px;
-        width:200px;
-    }
-
-    .wire-img{
-        height:200px !important;
-        width:150px !important;
-        object-fit: fill;
-
-    }
-.about-me{
-    flex-direction: column;
-}
-
-.skills{
+   .main{
+    align-items: flex-start;
+    padding:15%;
+   }
+   h1{
+    font-size: 70px;
+   }
+   /* ----------------- */
+   .about-me{
     flex-direction: row;
-    flex-wrap: wrap;
-    padding:10% 15%;
-    background-size:cover;
-}
-.education, .skill{
-    padding-left: 30%;
-}
-
-.featured{
-    flex-direction: column;
-    gap:5%;
-    padding:10% 15%;
+   }
+   .my-img{
+    height:350px;
+    width:250px;
+   }
+   .text{
+    align-items: flex-start;
+   }
+   .text p{
+    text-align: left;
+   }
+   /* --------------------- */
+   .skills{
+    align-items: flex-start;
+    padding-left: 50%;
+    height: 100%;
+   }
+   .education, .skill{
+    align-items: flex-start;
+   }
+   .sub-text, .sub-text-one, .sub-text-second{
+    text-align: left;
+   }
+   span{
+    font-size: 16px;
+   }
+   /* ---------------------------- */
+   .featured{
+    flex-direction: row;
+    gap:13%
+   }
+   .featured p{
+    text-align: left;
+ }
+ h4{
+    text-align: left;
+    font-size: 30px;
+ }
+ .featured-images, .featured-images div{
+    align-items: flex-start;
+} 
+h5{
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 .website-img{
-height:140px;
-width:300px;
-object-fit: fill;
+    height:200px;
+    width:350px;
+    object-fit: fill;
+    margin-bottom: 20px;
+}
+hr{
+    margin:40px 0;
+    width:100%;
 }
 .contact-me{
-    flex-direction: column;
-    align-items: flex-start;
+    padding:50px 15%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
-} */
+
+.contact-me h6{
+   font-size: 25px;
+   text-align: left;
+   margin-bottom: 15px;
+}
+.contact-me p{
+    text-align: left;
+   margin-bottom:10px;
+}
+
+
+
+}
